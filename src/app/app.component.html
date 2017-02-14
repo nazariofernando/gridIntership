@@ -1,0 +1,12 @@
+<md-list class="my-list">
+	<h3>Id</h3>
+	<md-list-item *ngFor="let person of people">{{person.id}}</md-list-item>
+</md-list>
+<md-list class="my-list">
+	<h3>Nome</h3>
+	<md-list-item *ngFor="let person of people">{{person.first_name | myParseFirstName }} {{person.last_name | myParseLastName }}</md-list-item>
+</md-list>
+
+<div>
+	<button *ngFor="let number of pages; let i = index " (click)="getPeople(i+1)" >{{i+1}}</button>
+</div>
