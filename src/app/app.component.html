@@ -1,10 +1,14 @@
 <md-list class="my-list">
 	<h3>Id</h3>
-	<md-list-item *ngFor="let person of people">{{person.id}}</md-list-item>
+	<md-list-item class="my-item" *ngFor="let person of people">{{person.id}}</md-list-item>
 </md-list>
 <md-list class="my-list">
 	<h3>Nome</h3>
-	<md-list-item *ngFor="let person of people">{{person.first_name | myParseFirstName }} {{person.last_name | myParseLastName }}</md-list-item>
+	<md-list-item class="my-item" *ngFor="let person of people">{{person.first_name | myParseFirstName }} {{person.last_name | myParseLastName }}</md-list-item>
+</md-list>
+<md-list class="my-list">
+	<h3>Foto</h3>
+	<md-list-item class="my-item" *ngFor="let person of people"><img src="{{person.avatar}}"></md-list-item>
 </md-list>
 
 <div>

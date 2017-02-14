@@ -5,3 +5,11 @@
 .my-list {
 	display: inline-block;
 }
+
+.my-item {
+	padding: 10px;
+}
+
+.my-item img {
+	height: 100%;
+}
